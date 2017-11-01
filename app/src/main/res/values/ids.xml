@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <item name="take_pic_ok" type="id"/>
+
+    <item name="only_auto_focus" type="id"/>
+
+</resources>

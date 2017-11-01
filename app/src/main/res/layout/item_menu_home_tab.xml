@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="0dp"
+              android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_handle"
+            style="@style/bottom_menu_item"
+            android:checked="true"
+            android:text="办理业务"/>
+
+        <RadioButton
+            android:id="@+id/radio_user"
+            style="@style/bottom_menu_item"
+            android:checked="true"
+            android:text="我的工作台"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9F9F9F" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#B7B8B8" />
+
+</LinearLayout>

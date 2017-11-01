@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:paddingLeft="@dimen/padding_12"
+    android:paddingRight="@dimen/padding_12">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_36"
+            android:layout_marginBottom="@dimen/padding_30"
+            android:src="@mipmap/login_center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.asia.yongyou.yongyouagent.widget.ClearButtonEditText
+                android:id="@+id/edit_username"
+                style="@style/edit_cancel_style"
+                android:layout_width="match_parent"
+                android:drawableLeft="@mipmap/login_user"
+                android:background="@android:color/transparent"
+                android:hint="@string/login_user_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:background="@drawable/edit_bg"
+            android:layout_marginTop="@dimen/padding_18"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.asia.yongyou.yongyouagent.widget.ClearButtonEditText
+                style="@style/edit_cancel_style"
+                android:id="@+id/edit_pwd"
+                android:layout_width="wrap_content"
+                android:layout_weight="10"
+                android:drawableLeft="@mipmap/login_pwd"
+                android:background="@android:color/transparent"
+                android:hint="@string/login_pwd_hint" />
+            <CheckBox
+                android:id="@+id/loginPwdVisi"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                style="@style/LoginPwdVisiable"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:duplicateParentState="true"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_18">
+
+        <TextView
+            android:id="@+id/error_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="密码输入错误，请重新输入"
+            android:drawableLeft="@mipmap/ic_wrong"
+            android:drawablePadding="@dimen/padding_5"
+            android:textSize="14sp"
+            android:textColor="@color/text_login_red"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"/>
+        <LinearLayout
+            android:id="@+id/remember_pwd_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <CheckBox
+                android:id="@+id/check_remember_pwd"
+                style="@style/ForgetCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="记住密码"
+                android:textSize="14sp"
+                android:textColor="@color/text_login_red"
+                android:layout_centerVertical="true"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <com.asia.yongyou.yongyouagent.widget.DisableButton
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/padding_30"
+        android:layout_height="@dimen/height_40"
+        android:text="登 录"
+        android:textColor="@color/text_white"
+        app:disableResId="@mipmap/button_disable"
+        app:pressedResId="@mipmap/button_down"
+        app:resId="@mipmap/button_nor"
+        android:clickable="false"
+        android:background="@mipmap/button_disable"
+        android:layout_gravity="center_vertical"
+        android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

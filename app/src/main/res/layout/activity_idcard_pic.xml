@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5F5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--<com.asia.yongyou.yongyouagent.common.CommHeader-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/bg_header_red"-->
+        <!--header:textColor="@color/white"-->
+        <!--header:headerName="上传证件"-->
+        <!--header:leftVis="true"-->
+        <!--header:rightVis="true"-->
+        <!--android:gravity="center">-->
+    <!--</com.asia.yongyou.yongyouagent.common.CommHeader>-->
+    <include layout="@layout/comm_header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#BEBEBE"
+                android:drawableLeft="@mipmap/ic_idcard"
+                android:drawablePadding="@dimen/padding_5"
+                android:text="@string/idcard_pic_desc"
+                android:paddingTop="@dimen/padding_12"
+                android:paddingBottom="@dimen/padding_12"
+                android:textSize="15sp" />
+            </LinearLayout>
+            <RelativeLayout
+                style="@style/idcard_lay_style">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                style="@style/idcard_desc1"
+                android:text="@string/idcard_pic_positive1" />
+            <TextView
+                style="@style/idcard_desc2"
+                android:text="@string/idcard_pic_positive2" />
+</LinearLayout>
+                <com.asia.yongyou.yongyouagent.widget.RoundRectImage
+                android:id="@+id/positive_img"
+                android:layout_width="@dimen/idcard_img_width_133"
+                android:layout_height="@dimen/idcard_img_height_82"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/idcard_positive" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/idcard_lay_style">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true">
+
+                    <TextView
+                        style="@style/idcard_desc1"
+                        android:text="@string/idcard_pic_negative1" />
+                    <TextView
+                        style="@style/idcard_desc2"
+                        android:text="@string/idcard_pic_negative2"/>
+                </LinearLayout>
+                <com.asia.yongyou.yongyouagent.widget.RoundRectImage
+                    android:id="@+id/negative_img"
+                    android:layout_width="@dimen/idcard_img_width_133"
+                    android:layout_height="@dimen/idcard_img_height_82"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/idcard_negative" />
+            </RelativeLayout>
+
+            <RelativeLayout
+               style="@style/idcard_lay_style">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true">
+
+                    <TextView
+                        style="@style/idcard_desc1"
+                        android:text="@string/idcard_pic_handle1" />
+                    <TextView
+                        style="@style/idcard_desc2"
+                        android:text="@string/idcard_pic_handle2" />
+                </LinearLayout>
+                <com.asia.yongyou.yongyouagent.widget.RoundRectImage
+                    android:id="@+id/handle_img"
+                    android:layout_width="@dimen/idcard_img_width_133"
+                    android:layout_height="@dimen/idcard_img_height_82"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/idcard_handle" />
+            </RelativeLayout>
+
+            <com.asia.yongyou.yongyouagent.widget.DisableButton
+                android:id="@+id/confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:layout_marginRight="@dimen/padding_12"
+                android:layout_marginTop="50dp"
+                android:padding="@dimen/padding_10"
+                android:text="完成"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:disableResId="@mipmap/button_disable"
+                app:pressedResId="@mipmap/button_down"
+                app:resId="@mipmap/button_nor"
+                android:clickable="false"
+                android:background="@mipmap/button_disable"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

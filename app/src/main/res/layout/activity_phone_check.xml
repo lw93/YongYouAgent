@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<com.asia.yongyou.yongyouagent.common.CommHeader-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--header:textColor="@color/white"-->
+        <!--android:background="@color/bg_header_red"-->
+        <!--header:headerName="返档激活号码校验"-->
+        <!--header:leftVis="true"-->
+        <!--header:rightVis="true"-->
+        <!--android:gravity="center">-->
+        <!--</com.asia.yongyou.yongyouagent.common.CommHeader>-->
+    <include layout="@layout/comm_header"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_marginRight="@dimen/padding_12"
+        android:layout_marginTop="@dimen/padding_36"
+        android:orientation="vertical">
+
+    <com.asia.yongyou.yongyouagent.widget.ClearButtonEditText
+        android:id="@+id/fandang_phone"
+        style="@style/edit_cancel_style"
+        android:layout_width="match_parent"
+        android:drawableLeft="@mipmap/ic_phone"
+        android:background="@drawable/edit_bg"
+        android:hint="@string/check_phone_hint"/>
+
+    <com.asia.yongyou.yongyouagent.widget.ClearButtonEditText
+        android:id="@+id/fandang_puk"
+        style="@style/edit_cancel_style"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_bg"
+        android:drawableLeft="@mipmap/ic_sim"
+        android:layout_marginTop="@dimen/padding_18"
+        android:hint="@string/chaeck_puk_hint" />
+
+        <com.asia.yongyou.yongyouagent.widget.DisableButton
+        android:id="@+id/check_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:layout_marginTop="@dimen/padding_65"
+        android:padding="@dimen/padding_10"
+        android:textColor="@color/text_white"
+        app:disableResId="@mipmap/button_disable"
+        app:pressedResId="@mipmap/button_down"
+        app:resId="@mipmap/button_nor"
+        android:clickable="false"
+        android:background="@mipmap/button_disable"
+        android:layout_gravity="center_vertical"
+        android:text="验 证"
+        android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>

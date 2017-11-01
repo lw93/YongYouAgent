@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/capture_containter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <SurfaceView
+            android:id="@+id/capture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <RelativeLayout
+            android:id="@+id/capture_crop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:minHeight="100dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name">
+
+    </RelativeLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capture_crop_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_10"
+            android:text="@string/idcard_check_warm"
+            android:textColor="@android:color/white"
+            android:id="@+id/warm_text"
+            android:textSize="12sp"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/camare_btn_selector"
+            android:id="@+id/btn"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/padding_20"
+            />
+</RelativeLayout>

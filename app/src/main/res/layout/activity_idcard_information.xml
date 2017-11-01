@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/comm_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/comment_padding_8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/identification_username"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/user_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/id_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/identification_idtype"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/id_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </RelativeLayout>
+
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/id_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/identification_idnumber"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/id_number_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </RelativeLayout>
+
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/id_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/identification_idaddress"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/id_address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/id_address"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/user_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identification_usersex"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/user_sex_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/user_nation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/identification_usernation"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/user_nation_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/user_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/identification_userbrithday"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/user_birthday_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/id_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/identification_iddate"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/id_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/identification_userphone"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <com.asia.yongyou.yongyouagent.widget.ClearButtonEditText
+                    android:id="@+id/user_phone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/identification_userphone_hint"
+                    android:inputType="phone|number"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/comment_division"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/comment_margin_8"
+                android:layout_marginRight="@dimen/comment_margin_8"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <FrameLayout
+                android:id="@+id/upload_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_height"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/upload_id_relativelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/upload_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/comment_margin_8"
+                        android:gravity="center"
+                        android:text="@string/identification_uploadid"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <TextView
+                        android:id="@+id/upload_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/comment_margin_8"
+                        android:layout_toLeftOf="@+id/upload_image"
+                        android:gravity="center"
+                        android:text="@string/identification_uploadresult"
+                        android:textColor="@color/bg_header_red"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <ImageView
+                        android:id="@+id/upload_image"
+                        android:layout_width="@dimen/comment_width_small"
+                        android:layout_height="@dimen/comment_height_small"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/comment_margin_8"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/identification_next" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/uploadfinished_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/identification_uploadfinished"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_large"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <com.asia.yongyou.yongyouagent.widget.DisableButton
+                android:id="@+id/identification_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_height"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="@mipmap/button_disable"
+                android:text="@string/identification_submit_btn"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large"
+                app:disableResId="@mipmap/button_disable"
+                app:pressedResId="@mipmap/button_down"
+                app:resId="@mipmap/button_nor" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

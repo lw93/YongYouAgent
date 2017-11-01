@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/comm_header"
+        android:id="@+id/choose_num_header"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_num_level_lay"
+        android:layout_below="@id/choose_num_header"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/choose_num_header"
+            android:id="@+id/choose_level_lay"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_15"
+            android:paddingBottom="@dimen/padding_15"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择号码种类"
+                android:textSize="17sp"
+                android:textColor="@color/text_gray"
+                android:layout_marginLeft="@dimen/comment_margin_10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/num_level"
+                android:layout_toRightOf="@+id/textview"
+                android:hint="请选择"
+                android:drawableRight="@mipmap/identification_next"
+                android:textSize="17sp"
+                android:textColor="@color/text_black"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="22dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/choose_level_lay"
+            android:id="@+id/search_num_layout"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/comment_margin_8"
+            android:layout_marginLeft="@dimen/comment_margin_10"
+            android:layout_marginRight="@dimen/comment_margin_10"
+            android:gravity="center_vertical"
+            android:background="#EBEBEB">
+            <EditText
+                android:layout_width="247dp"
+                android:layout_height="40dp"
+                android:id="@+id/edit_short_num"
+                android:hint="请输入3-6位数字搜索"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:background="@color/view"/>
+
+            <com.asia.yongyou.yongyouagent.widget.DisableButton
+                android:id="@+id/search_num_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="搜索"
+                android:textColor="@color/text_white"
+                app:disableResId="@mipmap/button_disable"
+                app:pressedResId="@mipmap/button_down"
+                app:resId="@mipmap/button_nor"
+                android:clickable="false"
+                android:background="@mipmap/button_disable"
+                android:layout_gravity="center_vertical"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_item_num_selected"
+            android:onClick="onClick"
+            android:layout_below="@id/choose_num_header">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/comment_padding_12"
+                android:paddingBottom="@dimen/comment_padding_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/num_resources_selected"
+                    android:text="170XXXXXXXX"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/comment_margin_10"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prestore_selected"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp"
+                    android:text="预存 0"
+                    android:layout_marginLeft="90dp"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/min_consumption_selected"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_black"
+                    android:text="月低消 0"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3DFDF"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/search_num_level_lay"
+            android:id="@+id/search_sim_layout"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/comment_margin_10"
+            android:layout_marginRight="@dimen/comment_margin_10"
+            android:layout_marginTop="@dimen/comment_margin_10"
+            android:background="#EBEBEB">
+            <EditText
+                android:layout_width="247dp"
+                android:layout_height="40dp"
+                android:id="@+id/edit_short_sim"
+                android:hint="请输入后5位卡号"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:background="@color/view"/>
+
+            <com.asia.yongyou.yongyouagent.widget.DisableButton
+                android:id="@+id/search_sim_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="搜索"
+                android:textColor="@color/text_white"
+                app:disableResId="@mipmap/button_disable"
+                app:pressedResId="@mipmap/button_down"
+                app:resId="@mipmap/button_nor"
+                android:clickable="false"
+                android:background="@mipmap/button_disable"
+                android:layout_gravity="center_vertical"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_item_sim_selected"
+        android:layout_below="@id/search_num_level_lay"
+        android:onClick="onClick"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/comment_padding_12"
+            android:paddingBottom="@dimen/comment_padding_12"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sim_resources_selected"
+                android:text="12345678987654321234"
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                android:layout_marginLeft="@dimen/comment_margin_10"/>
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3DFDF"/>
+
+
+    </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:layout_below="@id/search_sim_layout"
+            android:id="@+id/num_container"
+            android:layout_marginTop="@dimen/comment_margin_10"
+            android:visibility="gone">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_sim_layout"
+            android:id="@+id/sim_container"
+            android:layout_marginTop="@dimen/comment_margin_10"
+            android:visibility="gone">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/default_layout"
+            android:gravity="center">
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/default_img"-->
+                <!--android:src="@mipmap/default_img"/>-->
+
+        </RelativeLayout>
+
+
+    <com.asia.yongyou.yongyouagent.widget.DisableButton
+        android:id="@+id/choose_plan_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="选择套餐"
+        android:textColor="@color/text_white"
+        app:disableResId="@mipmap/button_disable"
+        app:pressedResId="@mipmap/button_down"
+        app:resId="@mipmap/button_nor"
+        android:clickable="false"
+        android:background="@mipmap/button_disable"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/comment_margin_30"
+        android:layout_marginBottom="@dimen/comment_margin_20"
+        android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+

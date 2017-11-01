@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_height">
+
+        <CheckedTextView
+            android:id="@+id/selectView"
+            android:layout_width="@dimen/comment_width_medium"
+            android:layout_height="@dimen/comment_height_medium"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/comment_margin_8"
+            android:background="@drawable/selector_packge_item" />
+
+        <TextView
+            android:id="@+id/packge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/comment_margin_8"
+            android:layout_toRightOf="@+id/selectView"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/comment_margin_8"
+            android:layout_toLeftOf="@+id/expandedView"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageButton
+            android:id="@+id/expandedView"
+            android:layout_width="@dimen/comment_width_small"
+            android:layout_height="@dimen/comment_height_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/comment_margin_8"
+            android:background="@drawable/selector_packge_item_desc"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/order_descripton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/comment_margin_8"
+        android:layout_marginLeft="@dimen/comment_margin_40"
+        android:layout_marginRight="@dimen/comment_margin_36"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/comm_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mywork_head_bg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/bg_header_red"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/mywork_head_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mywork_head_img"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/mywork_head_default_man"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/mywork_head_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/comment_margin_4"
+                android:text="@string/mywork_username_unlogin"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/comment_margin_8"
+            android:gravity="center"
+            android:text="@string/mywork_usersell"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/mywork_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/comment_margin_8"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/bg_header_red"
+            android:textSize="@dimen/text_size_large" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/comment_division"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <com.asia.yongyou.yongyouagent.widget.MyGridView
+        android:id="@+id/mywork_task"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/comment_margin_8"
+        android:layout_weight="1"
+        android:horizontalSpacing="@dimen/comment_margin_8"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/comment_margin_8" />
+
+    <com.asia.yongyou.yongyouagent.widget.DisableButton
+        android:id="@+id/mywork_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_height"
+        android:layout_margin="@dimen/comment_margin_8"
+        android:background="@mipmap/button_nor"
+        android:text="@string/mywork_logout_btn"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_large"
+        app:disableResId="@mipmap/button_disable"
+        app:pressedResId="@mipmap/button_down"
+        app:resId="@mipmap/button_nor" />
+
+</LinearLayout>

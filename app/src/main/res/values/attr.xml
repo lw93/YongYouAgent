@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DisableButton">
+        <attr name="pressedResId" format="reference" />
+        <attr name="resId" format="reference" />
+        <attr name="disableResId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="header_text">
+        <attr name="headerName" format="string" />
+        <attr name="leftVis" format="boolean" />
+        <attr name="rightVis" format="boolean" />
+    </declare-styleable>
+
+</resources>

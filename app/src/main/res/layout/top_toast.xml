@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/comment_height"
+              android:orientation="horizontal"
+              android:background="@color/toast_bg"
+              android:id="@+id/toast_layout"
+              android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/toast_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/prompt"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="34dp"/>
+
+        <TextView
+            android:id="@+id/toast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="代理商ID或密码错误，请重新输入!"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="#666666"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/comment_margin_8"
+            android:layout_gravity="center_vertical"/>
+
+
+
+</LinearLayout>

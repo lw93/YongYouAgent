@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.fandang.idcard.IdentificationActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/comm_header" />
+
+    <FrameLayout
+        android:id="@+id/idcard_step_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="@dimen/comment_margin_8"
+        android:layout_marginTop="@dimen/comment_margin_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/idcard_step_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/comment_margin_16"
+            android:background="@mipmap/idcard_step_rectangle"
+            android:gravity="center"
+            android:text="@string/identification_step_text"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <ImageView
+            android:id="@+id/idcard_step"
+            android:layout_width="@dimen/comment_width_medium"
+            android:layout_height="@dimen/comment_width_medium"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/idcard_step_icon" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/idcard_divide_1"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/comment_height"
+        android:layout_below="@+id/idcard_step_frame"
+        android:layout_marginLeft="@dimen/comment_margin_24"
+        android:background="@color/button_grey" />
+
+    <LinearLayout
+        android:id="@+id/idcard_step_LL_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idcard_divide_1"
+        android:layout_marginLeft="@dimen/comment_margin_12"
+        android:layout_marginRight="@dimen/comment_margin_24"
+        android:layout_marginTop="@dimen/comment_margin_4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/idcard_divide_1_text"
+            android:layout_width="@dimen/comment_width_small"
+            android:layout_height="@dimen/comment_width_small"
+            android:background="@mipmap/idcard_step_grey"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/first_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_height"
+            android:layout_marginLeft="@dimen/comment_margin_12"
+            android:background="@drawable/idcard_step_bg"
+            android:drawableLeft="@mipmap/idcard_step_bg"
+            android:drawableRight="@mipmap/idcard_unfinish"
+            android:gravity="center|left"
+            android:text="@string/first_step_text"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/idcard_divide_2"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/comment_height"
+        android:layout_below="@+id/idcard_step_LL_1"
+        android:layout_marginLeft="@dimen/comment_margin_24"
+        android:layout_marginTop="@dimen/comment_margin_4"
+        android:background="@color/button_grey" />
+
+    <LinearLayout
+        android:id="@+id/idcard_step_LL_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idcard_divide_2"
+        android:layout_marginLeft="@dimen/comment_margin_12"
+        android:layout_marginRight="@dimen/comment_margin_24"
+        android:layout_marginTop="@dimen/comment_margin_4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/idcard_divide_2_text"
+            android:layout_width="@dimen/comment_width_small"
+            android:layout_height="@dimen/comment_width_small"
+            android:background="@mipmap/idcard_step_grey"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/second_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_height"
+            android:layout_marginLeft="@dimen/comment_margin_12"
+            android:background="@drawable/idcard_step_bg"
+            android:drawableLeft="@mipmap/idcard_step_bg"
+            android:drawableRight="@mipmap/idcard_unfinish"
+            android:gravity="center|left"
+            android:text="@string/second_step_text"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/idcard_divide_3"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/comment_height"
+        android:layout_below="@+id/idcard_step_LL_2"
+        android:layout_marginLeft="@dimen/comment_margin_24"
+        android:layout_marginTop="@dimen/comment_margin_4"
+        android:background="@color/button_grey" />
+
+    <LinearLayout
+        android:id="@+id/idcard_step_LL_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idcard_divide_3"
+        android:layout_marginLeft="@dimen/comment_margin_12"
+        android:layout_marginRight="@dimen/comment_margin_24"
+        android:layout_marginTop="@dimen/comment_margin_4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/idcard_divide_3_text"
+            android:layout_width="@dimen/comment_width_small"
+            android:layout_height="@dimen/comment_width_small"
+            android:background="@mipmap/idcard_step_grey"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/third_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_height"
+            android:layout_marginLeft="@dimen/comment_margin_12"
+            android:background="@drawable/idcard_step_bg"
+            android:drawableLeft="@mipmap/idcard_step_bg"
+            android:gravity="center|left"
+            android:text="@string/third_step_text"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+
+    <com.asia.yongyou.yongyouagent.widget.DisableButton
+        android:id="@+id/start_identification_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_height"
+        android:layout_below="@+id/idcard_step_LL_3"
+        android:layout_marginBottom="@dimen/comment_margin_8"
+        android:layout_marginLeft="@dimen/comment_margin_12"
+        android:layout_marginRight="@dimen/comment_margin_24"
+        android:layout_marginTop="@dimen/comment_margin_48"
+        android:background="@mipmap/button_nor"
+        android:text="@string/start_identification_btn_text"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_large"
+        app:disableResId="@mipmap/button_disable"
+        app:pressedResId="@mipmap/button_down"
+        app:resId="@mipmap/button_nor" />
+
+</RelativeLayout>

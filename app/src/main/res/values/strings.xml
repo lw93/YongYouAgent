@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">YongYouAgent</string>
+
+    <string name="sure">确定</string>
+    <string name="chancel">取消</string>
+
+    <string name="network_disable">请检查网络连接</string>
+
+    <string name="rechar_phonenum">充值号码：</string>
+    <string name="recharg_money_text">充值金额：</string>
+    <string name="yuan">元</string>
+
+    <string name="idcard_info">证件信息</string>
+
+    <string name="identification_toolbar_title">身份证识别</string>
+    <string name="identification_step_text">完成身份证识别步骤</string>
+    <string name="first_step_text">请将手机蓝牙打开</string>
+    <string name="second_step_text">请打开身份证读卡器电源,用手机与身份证读卡器设备建立连接</string>
+    <string name="third_step_text">请将身份证平放在读卡器上,准备读卡</string>
+    <string name="start_identification_btn_text">开始识别身份证</string>
+
+    <string name="identification_username">姓名：</string>
+    <string name="identification_idtype">证件类型：</string>
+    <string name="identification_idnumber">证件号码：</string>
+    <string name="identification_idaddress">证件地址：</string>
+    <string name="identification_usersex">性别：</string>
+    <string name="identification_usernation">民族：</string>
+    <string name="identification_userbrithday">出生日期：</string>
+    <string name="identification_iddate">证件有效期：</string>
+    <string name="identification_userphone">联系人手机号：</string>
+    <string name="identification_userphone_hint">请输入联系人号码</string>
+    <string name="identification_uploadid">上传身份证照片</string>
+    <string name="identification_uploadresult">未完成</string>
+    <string name="identification_uploadfinished">老用户不需要再次上传照片</string>
+    <string name="identification_submit_btn">提交订单</string>
+
+    <string name="mywork">我的工作台</string>
+    <string name="mywork_username_unlogin">未登录</string>
+    <string name="mywork_usersell">今日销售号码数</string>
+    <string name="mywork_usersell_count">234</string>
+    <string name="mywork_logout_btn">注销</string>
+
+    <string name="idcard_pic_desc">请上传真实的身份证照片</string>
+    <string name="idcard_pic_positive1">身份证正面照</string>
+    <string name="idcard_pic_positive2">请确保身份证上面的文字\n清晰可见</string>
+    <string name="idcard_pic_negative1">身份证反面照</string>
+    <string name="idcard_pic_negative2">请确保身份证上面的文字\n清晰可见</string>
+    <string name="idcard_pic_handle1">身份证手持照</string>
+    <string name="idcard_pic_handle2">上半身照，请确保露出双\n手手臂</string>
+    <string name="idcard_check_warm">请核实身份信息确认无误!</string>
+    <string name="idcard_handle_warm">请确保所有照片中的身份证为同一张身份证，若您的实名制审核不通过，将无法开户，商品无法发出!</string>
+    <string name="idcard_scan_warm">将身份证%1$s置于此区域,并对齐扫描框边缘</string>
+    <string name="idcard_positive_warm">正面</string>
+    <string name="idcard_nagetive_warm">反面</string>
+    <string name="idcard_handle_warm_text">手持身份证正面拍摄置于此区域,并对齐扫描框边缘</string>
+
+    <string name="login_user_hint">请输入代理商工号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="check_phone_hint">请输入返档激活手机号码</string>
+    <string name="chaeck_puk_hint">请输入SIM卡号后五位</string>
+
+    <string name="agent_login_request">正在登陆,请稍候...</string>
+    <string name="add_service">添加增值服务</string>
+    <string name="identification_btn_text">身份识别</string>
+    <string name="none_order">0项</string>
+
+</resources>

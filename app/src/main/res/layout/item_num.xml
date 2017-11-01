@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/layout_item_num"
+        android:paddingTop="@dimen/comment_padding_12"
+        android:paddingBottom="@dimen/comment_padding_12">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/num_resources"
+        android:text="170XXXXXXXX"
+        android:textColor="@color/text_black"
+        android:textSize="15sp"
+        android:layout_marginLeft="@dimen/comment_margin_10"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/prestore"
+        android:textColor="@color/text_black"
+        android:textSize="15sp"
+        android:text="预存  0"
+        android:layout_marginLeft="90dp"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/min_consumption"
+        android:textSize="15sp"
+        android:textColor="@color/text_black"
+        android:text="月低消  0"
+        android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3DFDF"/>
+
+
+    </LinearLayout>
+
+

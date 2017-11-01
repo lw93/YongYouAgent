@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg_header_red"
+    android:id="@+id/comm_header">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="登录"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/header_left_image"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/title_back"
+        android:focusable="true"
+        android:clickable="true"/>
+
+
+
+    <ImageView
+        android:id="@+id/header_right_image"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_centerVertical="true"
+        android:focusable="true"
+        android:clickable="true"
+        android:src="@mipmap/user_center"
+        android:visibility="invisible"/>
+
+
+
+
+
+
+</RelativeLayout>

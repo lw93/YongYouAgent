@@ -1,0 +1,71 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="comment_margin_4">4dp</dimen>
+    <dimen name="comment_margin_8">8dp</dimen>
+    <dimen name="comment_margin_5">5dp</dimen>
+    <dimen name="comment_margin_10">10dp</dimen>
+    <dimen name="comment_margin_12">12dp</dimen>
+    <dimen name="comment_margin_16">16dp</dimen>
+    <dimen name="comment_margin_18">18dp</dimen>
+    <dimen name="comment_margin_20">20dp</dimen>
+    <dimen name="comment_margin_24">24dp</dimen>
+    <dimen name="comment_margin_30">30dp</dimen>
+    <dimen name="comment_margin_36">36dp</dimen>
+    <dimen name="comment_margin_40">40dp</dimen>
+    <dimen name="comment_margin_48">48dp</dimen>
+    <dimen name="comment_margin_64">64dp</dimen>
+    <dimen name="comment_margin_96">96dp</dimen>
+
+    <dimen name="comment_padding_4">4dp</dimen>
+    <dimen name="comment_padding_8">8dp</dimen>
+    <dimen name="comment_padding_5">5dp</dimen>
+    <dimen name="comment_padding_10">10dp</dimen>
+    <dimen name="comment_padding_12">12dp</dimen>
+    <dimen name="comment_padding_16">16dp</dimen>
+    <dimen name="comment_padding_18">18dp</dimen>
+    <dimen name="comment_padding_20">20dp</dimen>
+    <dimen name="comment_padding_24">24dp</dimen>
+    <dimen name="comment_padding_30">30dp</dimen>
+    <dimen name="comment_padding_36">36dp</dimen>
+    <dimen name="comment_padding_40">40dp</dimen>
+    <dimen name="comment_padding_48">48dp</dimen>
+    <dimen name="comment_padding_64">64dp</dimen>
+    <dimen name="comment_padding_96">96dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="cornor_size_small">2dp</dimen>
+    <dimen name="cornor_size_medium">4dp</dimen>
+    <dimen name="cornor_size_large">8dp</dimen>
+
+    <dimen name="comment_width">48dp</dimen>
+    <dimen name="comment_height">48dp</dimen>
+    <dimen name="comment_width_medium">36dp</dimen>
+    <dimen name="comment_height_medium">36dp</dimen>
+    <dimen name="comment_width_small">24dp</dimen>
+    <dimen name="comment_height_small">24dp</dimen>
+    <dimen name="comment_width_16">16dp</dimen>
+    <dimen name="comment_height_16">16dp</dimen>
+
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_36">36dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_18">18dp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_22">22dp</dimen>
+    <dimen name="padding_65">65dp</dimen>
+
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="idcard_img_width_133">133dp</dimen>
+    <dimen name="idcard_img_height_82">82dp</dimen>
+
+    <dimen name="main_text_size">15sp</dimen>
+
+</resources>

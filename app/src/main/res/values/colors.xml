@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#B30D1B</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="text_grey">#b2b2b2</color>
+    <color name="button_grey">#BEBEBE</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_header_red_dark">#c61b09</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_black">#3c3c3c</color>
+    <color name="transparent">#00000000</color>
+    <color name="rbtn_home_tab_menu">#efefef</color>
+    <color name="rbtn_menu_text">#4d525d</color>
+    <color name="text_green">#24ef31</color>
+    <color name="bg_header_red">#DD2230</color>
+    <color name="view">#d7d7d7</color>
+    <color name="transparent_bg">#999999</color>
+    <color name="activity_dialog">#88000000</color>
+    <color name="activity_dialog_bg">#e0000000</color>
+    <color name="toast_bg">#ffebeb</color>
+    <color name="text_login_red">#E70012</color>
+    <color name="text_login_black">#000000</color>
+
+    <color name="text_gray">#666666</color>
+    <color name="main_text">#707070</color>
+    <color name="black">#000000</color>
+</resources>
